@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>主人，女神节快乐</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="keywords" content="节日礼物，惊喜,有趣,最美,女神">
+	<meta name="description" content="女神节最美的女人">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		.col-xs-4{
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+
+		.col-xs-4 a{
+			margin-bottom: 0px;
+		}
+
+		.container {
+			margin-top: 40px;
+		}
+		/*<div class="col-xs-4 col-md-4 img-sec">
+			<figure class="img-figure is-inverse">
+				<a href="#" class="thumbnail">
+					<img src="imgs/1.jpg" alt="...">
+				</a>
+				<figcaption>
+					<div class="img-back">
+						<p>第1张图片的描述</p>
+					</div>
+				</figcaption>
+			</figure> 
+		</div>*/
+		.img-sec{
+			/*width: 250px;
+			height: 180px;position: relative;*/
+			overflow: hidden;
+
+			perspective:1800px;
+			-webkit-perspective:1800px;
+			-o-perspective:1800px;
+			-moz-perspective:1800px;
+			-ms-perspective:1800px;
+		}
+		/*3 图片区样式*/
+		.img-figure{
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+			position: relative;
+		}
+		.img-figure figcaption{
+			text-align: center;
+		}
+		.img-figure figcaption .img-back p{
+
+			margin: 20px 0 0 0;
+			font-size: 16px;
+			color: #a7a0a2;
+		}
+
+		.img-figure{
+
+			transform-style: preserve-3d;
+			-webkit-transform-style: preserve-3d;
+			-o-transform-style: preserve-3d;
+			-moz-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;
+
+			cursor: pointer;
+
+			transform-origin: 0 50% 0;
+			-webkit-transform-origin: 0 50% 0;
+			-o-transform-origin: 0 50% 0;
+			-moz-transform-origin: 0 50% 0;
+			-ms-transform-origin: 0 50% 0;
+
+			transition:transform .6s ease-in-out;
+
+			-webkit-transition:-webkit-transform .6s ease-in-out;
+			-o-transition:transform .6s ease-in-out;
+			-moz-transition:transform .6s ease-in-out;
+			-ms-transition:transform .6s ease-in-out;
+		}
+		.img-figure.is-inverse{
+			/*transform: translate(250px) rotateY(180deg);
+			-webkit-transform: translate(250px) rotateY(180deg);
+			-o-transform: translate(250px) rotateY(180deg);
+			-moz-transform: translate(250px) rotateY(180deg);
+			-ms-transform: translate(250px) rotateY(180deg);*/
+		}
+		
+		.img-figure figcaption .img-back{
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+			overflow: auto;
+
+			color: #a7a0a2;
+            font-size: 22px;
+            line-height: 1.25;
+            text-align: left;
+            background-color: #fff;
+            
+            transform: rotateY(180deg) translateZ(1px);
+            -webkit-transform: rotateY(180deg) translateZ(1px);
+			-o-transform: rotateY(180deg) translateZ(1px);
+			-moz-transform: rotateY(180deg) translateZ(1px);
+			-ms-transform: rotateY(180deg) translateZ(1px);
+
+            backface-visibility: hidden;
+            -webkit-backface-visibility:hidden;
+            -o-backface-visibility:hidden;
+			-moz-backface-visibility:hidden; 
+			-ms-backface-visibility:hidden;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-4 col-md-4 img-sec">
+				<figure class="img-figure" id='img-figure'>
+					<a href="#" class="thumbnail">
+						<img src="imgs/1.jpg" alt="...">
+					</a>
+					<figcaption>
+						<div class="img-back">
+							<p>一个小小的问候，一份浓浓的真意~</p>
+						</div>
+					</figcaption>
+				</figure> 
+			</div>
+			<div class="col-xs-4 col-md-4 img-sec">
+				<figure class="img-figure" id='2'>
+					<a href="#" class="thumbnail">
+						<img src="imgs/2.jpg" alt="...">
+					</a>
+					<figcaption>
+						<div class="img-back">
+							<p>女神节小礼物送给主人~</p>
+						</div>
+					</figcaption>
+				</figure> 
+			</div>
+			<div class="col-xs-4 col-md-4 img-sec">
+				<figure class="img-figure" id='3'>
+					<a href="#" class="thumbnail">
+						<img src="imgs/3.jpg" alt="...">
+					</a>
+					<figcaption>
+						<div class="img-back">
+							<p>阳光是你的点缀~</p>
+						</div>
+					</figcaption>
+				</figure> 
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-4 col-md-4 img-sec">
+				<figure class="img-figure" id='4'>
+					<a href="#" class="thumbnail">
+						<img src="imgs/4.jpg" alt="...">
+					</a>
+					<figcaption>
+						<div class="img-back">
+							<p>优雅是你的智慧~</p>
+						</div>
+					</figcaption>
+				</figure> 
+			</div>
+			<div class="col-xs-4 col-md-4 img-sec">
+				<figure class="img-figure" id='5'>
+					<a href="#" class="thumbnail">
+						<img src="imgs/5.jpg" alt="...">
+					</a>
+					<figcaption>
+						<div class="img-back">
+							<p>温情是你的妩媚~</p>
+						</div>
+					</figcaption>
+				</figure> 
+			</div>
+			<div class="col-xs-4 col-md-4 img-sec">
+				<figure class="img-figure" id='6'>
+					<a href="#" class="thumbnail">
+						<img src="imgs/6.jpg" alt="...">
+					</a>
+					<figcaption>
+						<div class="img-back">
+							<p>爱心是你的宝贝~</p>
+						</div>
+					</figcaption>
+				</figure> 
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-4 col-md-4 img-sec">
+				<figure class="img-figure" id='7'>
+					<a href="#" class="thumbnail">
+						<img src="imgs/7.jpg" alt="...">
+					</a>
+					<figcaption>
+						<div class="img-back">
+							<p>愿快乐与你作陪~</p>
+						</div>
+					</figcaption>
+				</figure> 
+			</div>
+			<div class="col-xs-4 col-md-4 img-sec">
+				<figure class="img-figure" id='8'>
+					<a href="#" class="thumbnail">
+						<img src="imgs/8.jpg" alt="...">
+					</a>
+					<figcaption>
+						<div class="img-back">
+							<p>愿美丽与你相随~</p>
+						</div>
+					</figcaption>
+				</figure> 
+			</div>
+			<div class="col-xs-4 col-md-4 img-sec">
+				<figure class="img-figure" id='9'>
+					<a href="#" class="thumbnail">
+						<img src="imgs/9.jpg" alt="...">
+					</a>
+					<figcaption>
+						<div class="img-back">
+							<p>愿青春为你陶醉~主人，女神节快乐~</p>
+						</div>
+					</figcaption>
+				</figure> 
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+
+	(function(){
+		// 获得元素的宽度
+		var girWidth=document.getElementById('img-figure').offsetWidth;
+		// 获得元素数组
+		var figuresArr=document.getElementsByClassName('img-figure');
+		// 初始化isinverse状态和事件处理器
+		for(var i=0;i<figuresArr.length;i++){
+			// console.log(figuresArr[i]);
+			// debugger;
+			figuresArr[i].setAttribute('isinverse','false');
+
+			if(isMobile()){
+				figuresArr[i].addEventListener("click",figHandler,'false');
+				console.log('移动端注册点击事件');
+			}else{
+				// TODO:Bug1 因为有3D旋转所以会触发多次..
+				figuresArr[i].addEventListener("mouseover",figHandler,'false');
+				figuresArr[i].addEventListener("mouseout",figHandler,'false');
+				console.log('PC端注册移上和移出事件');
+			}
+		}
+
+		function figHandler(e){
+		 	// console.log(this);
+		 	// debugger;
+
+		 	// 找到元素索引
+		 	var index;
+		 	for(var i=0;i<figuresArr.length;i++){
+		 		if(figuresArr[i]==this){
+		 			index=i;
+		 		}
+			}
+			// console.log('点击图片',index);
+			// 翻转元素
+			inverse(index);
+			
+			e.preventDefault();
+			e.stopPropagation();
+		}
+
+		function inverse(index){
+	    	var imgFigureClassName='img-figure';
+
+	    	// isinverse==false表示正面
+	    	if(figuresArr[index].getAttribute('isinverse')=='false'){
+	    		figuresArr[index].className=imgFigureClassName+" is-inverse";
+	    		figuresArr[index].setAttribute('isinverse','true');
+	    		//transform: translate(250px) rotateY(180deg);
+				// -webkit-transform: translate(250px) rotateY(180deg);
+	    		figuresArr[index].style.transform='translate('+girWidth+'px) rotateY(180deg)'
+	    		figuresArr[index].style.webkitTransform='translate('+girWidth+'px) rotateY(180deg)'
+	    	}else{
+	    		figuresArr[index].className=imgFigureClassName;
+	    		figuresArr[index].setAttribute('isinverse','false');
+	    		figuresArr[index].style.transform='translate(0px) rotateY(0deg)'
+	    		figuresArr[index].style.webkitTransform='translate(0px) rotateY(0deg)'
+	    	}
+	    }
+
+	    function isMobile(){
+	    	var ua =  navigator.userAgent;
+			var isAndroid = /Android/i.test(ua);
+			var isBlackBerry = /BlackBerry/i.test(ua);
+			var isWindowPhone = /IEMobile/i.test(ua);
+			var isIOS = /iPhone|iPad|iPod/i.test(ua);
+			var res = isAndroid || isBlackBerry || isWindowPhone || isIOS;
+			console.log('是手机吗？',res);
+			return res;
+	    }
+	})()
+	</script>
+</body>
+</html>
